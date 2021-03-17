@@ -1,0 +1,10 @@
+<div class="container">
+
+  <div class="card top-5">
+    <h3 class="font-weight-bold text-center">Pesquisa de Usuários Github</h3>
+    <app-campo-pesquisa (dados)="recebeDados($event)" (loading)="recebeLoading($event)"></app-campo-pesquisa>
+    <app-botoes (tipoRepositorio)=" recebeTipo($event)" [loading]="loading"></app-botoes>
+  </div>
+  <app-resultado [tipo]=" tipoRepositorio" [dados]="dadosUsuario">
+  </app-resultado>
+</div>

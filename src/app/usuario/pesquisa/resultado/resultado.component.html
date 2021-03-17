@@ -1,0 +1,19 @@
+<div class="card top-5">
+  <div class="top-5" *ngIf="isRepositorioUsuario">
+    <p *ngIf="nome !== ''">Repositorios de <a routerLink="/detalhe/{{login}}" class="link-light">{{nome}}</a></p>
+    <ul class="list-group">
+      <li *ngFor="let repo of repositorios" class="list-group-item">
+        {{repo.name}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="top-5" *ngIf="isRepositorioMaisAcessado">
+    <p *ngIf="nome !== ''"> Mais acessados de <a routerLink="/detalhe/{{login}}" class=" link-light">{{nome}}</a></p>
+    <ul class="list-group">
+      <li *ngFor="let repo of maisVistos" class="list-group-item">
+        {{repo.name}}
+      </li>
+    </ul>
+  </div>
+</div>

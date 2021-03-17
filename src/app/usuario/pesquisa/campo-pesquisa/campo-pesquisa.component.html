@@ -1,0 +1,10 @@
+<div class="top-5">
+  <form [formGroup]="formPesquisa">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" formControlName="argumento" placeholder="Nome do usuário"
+        aria-label="Nome do usuário" aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+        (click)="enviaDados()">Pesquisa</button>
+    </div>
+  </form>
+</div>

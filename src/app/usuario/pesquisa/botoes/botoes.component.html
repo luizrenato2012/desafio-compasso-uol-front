@@ -1,0 +1,7 @@
+<div class="top-5">
+  <button type="button" (click)="escolhe('usuario')" class="btn btn-primary">Repositórios</button>
+  <button type="button" (click)="escolhe('mais')" class="btn btn-info">Mais Visitados</button>
+  <div class="spinner-border" role="status" *ngIf="loading">
+    <span class="visually-hidden"></span>
+  </div>
+</div>

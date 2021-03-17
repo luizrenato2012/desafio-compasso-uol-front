@@ -1,0 +1,53 @@
+<div class="container">
+
+  <form [formGroup]="formUsuario">
+    <div class="card top-5">
+      <h3 class="font-weight-bold text-center">Detalhes do Usuario</h3>
+      <div class="form-row">
+
+        <div class="form-group col-md-4">
+          <label for="login">Login</label>
+          <input id="login" type="text" formControlName="login" class="form-control" readonly>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" formControlName="nome" class="form-control" readonly>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="location">Localização</label>
+          <input id="location" type="text" formControlName="location" class="form-control" readonly>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="email">Email</label>
+          <input id="email" type="text" formControlName="email" class="form-control" readonly>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="blog">Blog</label>
+          <input id="blog" type="text" formControlName="blog" class="form-control" readonly>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="url">URL</label>
+          <input id="url" type="text" formControlName="url" class="form-control" readonly>
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+        <label for="bio">Bio</label>
+        <textarea class="form-control" formControlName="bio" readonly></textarea>
+      </div>
+
+
+      <div>
+        <button class=" btn btn-primary" (click)="volta()">Voltar</button>
+      </div>
+    </div>
+  </form>
+</div>
